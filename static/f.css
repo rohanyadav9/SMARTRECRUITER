@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    color: #396517;
+    background-color:#fff;
+}
+
+header{
+    
+    color: yellow;
+    font-size: 30px;
+}
+
+.main-page{
+    background-image: url("Career-Banner.jpg");
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+    
+}
+
+
+
+
+.btn-primary{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius:5px ;
+}
+
+.btn-primary{
+    border:none;
+    background: rgb(236, 138, 9);
+    color:#151613 ;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: #536942;
+    font-size: 50px;
+}
+
+
+
+.service h2{
+    font-size: 65px;
+    font-style: italic;
+    font-family: 'Brush Script MT', cursive;
+    
+}
+
+.service{
+    background-color: #dee0ec;
+    font-size: 10px;
+    text-align: center;
+    color: #536942;
+
+}
+
+#services .service img {
+    width: 2%;
+    height: auto;
+}
+
+
+
+ .wrapper{
+    background-color: rgb(247, 252, 252);
+    background-position: bottom center;
+
+}*/
+
+
+.MICROSOFT h2{
+    font-size: 35px;
+    font-style: italic;
+    color: #ad3f7d;
+    margin:60px 20px;
+    justify-content: start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.MICROSOFT p{
+    font-size: 16px;
+    color: rgb(26, 26, 88);
+    margin: 5px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.MICROSOFT b u{
+    font-size: 16px;
+    color: #252529;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: start;
+    margin:2px 20px;
+}
+
+
+.MICROSOFT button{
+    margin: 5px;
+    color: #151613;
+    font-size: 17px;
+    float: unset;
+    text-align: center;
+}
+

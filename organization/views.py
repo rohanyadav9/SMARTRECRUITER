@@ -4,13 +4,6 @@ from .models import organization
 from .models import emp_detail
 from employe.models import details
 
-
-def sign_com(request):
-    b=request.POST.get('sign_com')
-    if b=='login':
-        return render(request,'com_in.html')
-    if b=='logup':
-        return render(request,'com_up.html')
          
 def login(request):
     if request.method == 'POST':
@@ -21,7 +14,9 @@ def login(request):
            request.session['username'] = username
            return redirect('com_details')
        else:
-           return HttpResponse('Invalid username or password')  
+           return HttpResponse('Invalid username or password')
+    else:
+        return render(request,'a.html')  
    
 def logup(request):
     if request.method=='POST':
@@ -40,7 +35,9 @@ def logup(request):
                 a=organization(com_name=com_name,username=username,password=password,about=about,qualification=qualification,experience=experience,language=language,post=post,skills=skills)      
                 a.save()
                 request.session['username'] = username
-                return render(request,'emp.html')
+                return render(request,'1.html')
+    else:
+        return render(request,'j.html')
             
 def emp(request):
     if request.method=='POST':
@@ -65,4 +62,4 @@ def com_details(request):
     if not c:
         return HttpResponse('u dont have any candidate')
     else:
-        return render(request,'com_details.html',{'name':e,'c':c})
+        return render(request,'d.html',{'name':e,'c':c})

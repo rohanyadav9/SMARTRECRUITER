@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form</title>
+    <link rel="stylesheet" href="{% static '1.css' %}">
+
+
+</head>
+
+<body>
+    
+
+    <form action="emp" method="post">
+        {% csrf_token %}
+        <h2>Employee Details </h2>
+        <div class="employee1">
+            
+            <label for="employeeName">(1) Employee Name :</label>
+            <input type="text"  name="name1" placeholder="Enter employee name" required>
+
+            <label for="employeePost">Employee Post :</label>
+            <input type="text"  name="post1" placeholder="Enter employee post" required>
+
+            <label for="employeeProfile">Employee Profile :</label>
+            <input type="text"  name="profile1" placeholder="Enter employee profile"
+                required>
+        </div>
+        <div class="employee2">
+
+            <label for="employeeName">(2) Employee Name :</label>
+            <input type="text" name="name2" placeholder="Enter employee name" required>
+
+            <label for="employeePost">Employee Post :</label>
+            <input type="text" name="post2" placeholder="Enter employee post" required>
+
+            <label for="employeeProfile">Employee Profile :</label>
+            <input type="text"  name="profile2" placeholder="Enter employee profile"
+                required>
+        </div>
+
+
+        <div class="employee3">
+
+            <label for="employeeName">(3) Employee Name :</label>
+
+            <input type="text"  name="name3" placeholder="Enter employee name" required>
+
+            <label for="employeePost">Employee Post :</label>
+            <input type="text"  name="post3" placeholder="Enter employee post" required>
+
+            <label for="employeeProfile">Employee Profile :</label>
+            <input type="text"  name="profile3" placeholder="Enter employee profile"
+                required>
+        </div>
+        <div class="employee4">
+            <label for="employeeName">(4) Employee Name :</label>
+            <input type="text"  name="name4" placeholder="Enter employee name" required>
+
+            <label for="employeePost">Employee Post :</label>
+            <input type="text"  name="post4" placeholder="Enter employee post" required>
+
+            <label for="employeeProfile">Employee Profile :</label>
+            <input type="text"  name="profile4" placeholder="Enter employee profile"
+                required>
+        </div>
+        <div class="employee5">
+            <label for="employeeName">(5) Employee Name :</label>
+            <input type="text"  name="name5" placeholder="Enter employee name" required>
+
+            <label for="employeePost">Employee Post :</label>
+            <input type="text"  name="post5" placeholder="Enter employee post" required>
+
+            <label for="employeeProfile">Employee Profile :</label>
+            <input type="text"  name="profile5" placeholder="Enter employee profile"
+                required>
+        </div>
+        <div class="employee6">
+            <label for="employeeName">(6) Employee Name :</label>
+            <input type="text"  name="name6" placeholder="Enter employee name" required>
+
+            <label for="employeePost">Employee Post :</label>
+            <input type="text"  name="post6" placeholder="Enter employee post" required>
+
+            <label for="employeeProfile">Employee Profile :</label>
+            <input type="text"  name="profile6" placeholder="Enter employee profile"
+                required>
+        </div>
+        <div class="employee7">
+        <label for="employeeName">(7) Employee Name :</label>
+
+        <input type="text" name="name7" placeholder="Enter employee name" required>
+
+
+        <label for="employeePost">Employee Post :</label>
+        <input type="text"  name="post7" placeholder="Enter employee post" required>
+
+        <label for="employeeProfile">Employee Profile :</label>
+        <input type="text"  name="profile7" placeholder="Enter employee profile" required>
+    </div>
+    <div class="employee8">
+        <label for="employeeName">(8) Employee Name :</label>
+        <input type="text"  name="name8" placeholder="Enter employee name" required>
+
+        <label for="employeePost">Employee Post :</label>
+        <input type="text" id="post8" name="employeePost" placeholder="Enter employee post" required>
+
+        <label for="employeeProfile">Employee Profile :</label>
+        <input type="text" id="profile8" name="employeeProfile" placeholder="Enter employee profile" required>
+    </div>
+    <div class="employee9">
+        <label for="employeeName">(9) Employee Name :</label>
+        <input type="text"  name="name9" placeholder="Enter employee name" required>
+
+        <label for="employeePost">Employee Post:</label>
+        <input type="text"  name="post9" placeholder="Enter employee post" required>
+
+        <label for="employeeProfile">Employee Profile :</label>
+        <input type="text"  name="profile9" placeholder="Enter employee profile" required>
+    </div>
+    <div class="employee10">
+        <label for="employeeName">(10) Employee Name :</label>
+        <input type="text"  name="name10" placeholder="Enter employee name" required>
+
+        <label for="employeePost">Employee Post :</label>
+        <input type="text" name="post10" placeholder="Enter employee post" required>
+
+        <label for="employeeProfile">Employee Profile:</label>
+        <input type="text" name="profile10" placeholder="Enter employee profile" required>
+    </div>
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recruiter</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="{% static 'f.css' %}">
+</head>
+<body>
+   
+    
+    <section class="main-page">
+        <header>
+            <h1 class="LOGO"><ion-icon name="briefcase-outline"></ion-icon>Smart Recruiter</h1>
+        </header>
+
+       
+    </section>
+
+   <section id="services">
+                <div class="service">
+                                <h2 class="intra-heading">HII {{name}}</h1>
+
+                   
+                    <img src="{% static 'users.jpeg' %}" alt="cv">   
+                </div>
+    </section>
+
+   
+    <section class="about-us">
+        <div class="container">
+        <form action="matching" method="post">
+            {%csrf_token%}
+            {%for organization in c%}
+            <div class="MICROSOFT">
+            <h2>{{organization.0}}</h2>
+            <p><b>About company:</b> {{organization.2}}</p>
+            <b><u>Post: {{organization.1}}</u></b>
+
+        <br>    
+            <button class="btn-primary" name="name" value="{{organization.0}}">Apply </button>
+            </div>
+            {%endfor%}
+            <hr>
+        </form>
+           
+            </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recruiter | First Page</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+   <div class="container">
+    <nav class="flex">
+     <h1 class="Logo"><ion-icon name="briefcase-outline"></ion-icon>Smart Recruiter</h1>
+     <ul>
+        <li><a href="#"><ion-icon name="home-outline"></ion-icon>Home</a></li>
+        <li><a href="#"><ion-icon name="copy-outline"></ion-icon>About Us</a></li>
+        <li>
+            <a href="#">Menu
+                <ion-icon name="caret-down-outline"></ion-icon>
+            </a>
+            <ul>
+                <li><a href="#">User
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                </a>
+                <ul>
+                    <li><a href="signin" target="_self">Sign In</a></li>
+                    <li><a href="signup" target="_self">Sign Up</a></li>
+                </ul>
+                </li>
+                <li><a href="#">Company
+                    <ion-icon name="caret-forward-outline"></ion-icon>
+                </a>
+                    <ul>
+                        <li><a href="login"target="_self">Login</a></li>
+                        <li><a href="logup" target="_self">Logup</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#"><ion-icon name="call-outline"></ion-icon>Contact</a></li>
+     </ul>
+    </nav>
+    <div class="wrapper">
+        <h2>Welcome to Smart Recruiter.</h2>
+        <p>A smart recruiter excels in identifying top talent efficiently and effectively. 
+            They leverage advanced technologies, such as AI and data analytics,  to streamline the 
+            <br>
+           hiring process, ensuring the right fit for the company. By staying updated with industry trends and maintaining a keen understanding
+           of organizational needs, they
+           <br> 
+             create a seamless recruitment experience that  attracts and retains high-quality candidates.
+        </p>
+    </div>
+<script src="{% static 'first.js' %}"></script>
+</body>
+</html>

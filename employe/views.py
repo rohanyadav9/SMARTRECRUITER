@@ -8,14 +8,6 @@ from django.core.mail import send_mail
 from django.conf import settings
 
 
-
-
-def sign(request):
-    b=request.POST.get('sign')
-    if b=='sign in':
-        return render(request,'user1.html')
-    if b=='sign up':
-        return render(request,'user2.html')
     
 def signin(request):
     if request.method=='POST':
@@ -27,6 +19,9 @@ def signin(request):
             return redirect('matching')
         else:
             return HttpResponse('invalid username')
+            
+    else:
+        return render(request,'b.html')
 
 
 
@@ -49,6 +44,8 @@ def signup(request):
         a.save()
         request.session['username'] = username
         return redirect('matching')
+    else:
+        return render(request,'r.html')
  
 
 
@@ -118,7 +115,7 @@ def matching(request):
         d=employe.objects.filter(username=username).first()
         e=d.name
         c=organization.objects.values_list('com_name','post','about')
-        return render(request,'matching.html',{'name':e,'c':c})
+        return render(request,'f.html',{'name':e,'c':c})
  
       
 
@@ -135,7 +132,7 @@ def send_email(request):
     message = f'''Heloo,{b}
 
      This mail is regarding to inform you ,that you, fullfilled the requirement of the {c} in which you applied through our website.
-     We are so happy to inform you that you fulfilled the requirement of the company.
+    
      
      The company will contact you shortly.In the mean time you can contact {c}'s employe.
      

@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="{% static 'google.css' %}">
+   
+</head>
+
+<body>
+    <header>
+        <h1><ion-icon name="briefcase-outline"></ion-icon> Smart Recruiter</h1>
+
+    </header>
+    <div class="container">
+        <div class="aboutcompany">
+            <h1> <u>Welcome {{name}}</u> </h1>
+            <br>
+            <h3><b>“Here is the list of applicants who are eligible for the mentioned post.”</b></h3>
+       </div>
+       <br>
+       {%for detail in c%}
+       <div class="rohan">
+        <b><u>Name of applicant :</u> {{detail.0}}</b>
+        <br><br>
+        <b><u>Qualification :</u> {{detail.1}}</b>
+        <br> <br>
+        <b><u>Skill :</u> {{detail.2}}</b>
+        <br><br>
+        <b><u>Experience :</u> {{detail.3}}</b>
+        <br> <br>
+        <b><u>Personal Skills :</u> {{detail.4}}</b>
+        <br><br>
+        <b><u>Email :</u> {{detail.5}}</b>
+        <br><br>
+        <b><u>Phone no.:</u> {{detail.6}}</b>
+        <br><br>
+
+       </div>
+       {%endfor%}
+      
+    
+   </div>
+</body>
+</html>
